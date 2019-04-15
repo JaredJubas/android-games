@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/LoadBackgroundText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Load custom image for tile game"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <Button
+        android:id="@+id/LoadImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoadBackgroundText"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Select Background Image" />
+
+    <Button
+        android:id="@+id/DefaultImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LoadImageButton"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Use Default Image" />
+
+    <ImageView
+        android:id="@+id/CustomImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="238dp"
+        app:srcCompat="@android:drawable/screen_background_light_transparent" />
+
+
+</RelativeLayout>
